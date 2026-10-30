@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripition" content="Formulário de cadastro para alunos e atletas de natação.">
+    <title>Cadastro - Mundo da Natação</title>
+</head>
+<body>
+    <a href=""#conteudo-principal">Pular para o conteúdo</a>
+
+    <header>
+        <h1>Mundo da Natação</h1>
+    </header>
+
+    <nav aria-label="Navegação principal">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li> 
+            <li><a href="dados.html">Dados</a></li>
+            <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+            <li><a href="contato.html">Contato</a></li> 
+        </ul>
+    </nav>
+
+    <main id="conteudo-principal">
+        <section> 
+            <h2>Cadastro de Alunos e Atletas</h2>
+            <p>Preencha o formulário abaixo para realizar a sua pré-inscrição nas aulas da natação.</p>
+
+            <form>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <p>Por favor, preencha todos os campos obrigatórios.</p>
+                    <p>
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome"><br>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email"><br>
+                    </p>
+
+                    <p>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone"><br>
+                    </p>
+
+                    <p>
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input type="date" id="nascimento" name="nascimento"><br>
+                    </p>
+                    
+                    <p>
+                        <label for="sexo">Sexo:</label>
+                        <select id="sexo" name="sexo">
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                        </select><br>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Modalidade favorita e seu Nível</legend>
+
+                    <p>
+                        <label for="estilo-preferido">Estilo Preferido:</label>
+                        <select id="estilo-preferido" name="estilo-preferido">
+                            <option value="Crawl">Nado de Crawl</option>
+                            <option value="Costas">Nado de Costas</option>
+                            <option value="Peito">Nado de Peito</option>
+                            <option value="Borboleta">Nado de Borboleta</option>
+                            <option value="Medley">Medley (todos os estilos)</option>
+                        </select><br>
+                    </p>
+
+                    <p>Nível de experiência: (Seu contato com a piscina?)</p> 
+
+                    <p>
+                        <input type="radio" id="iniciante" name="nivel" value="iniciante">
+                        <label for="iniciante">Iniciante (Nunca treinei)</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="intermediario" name="nivel" value="intermediario">
+                        <label for="intermediario">Intermediário (Ainda aperfeiçoando a técnica)</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="avancado" name="nivel" value="avancado">
+                        <label for="avancado">Avançado (Já participei de algumas competições)</label>
+                    </p>
+
+                    <p>
+                        <label for="observacoes">Observações médicas ou Histórico:</label>
+                        <textarea id="observacoes" name="observacoes" rows="4" maxlength="300" placeholder="Ex: Problemas respiratórios, alergias, etc."></textarea><br>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="termos" name="termos">
+                        <label for="termos">Declaro que li e concordo com os termos e condições.</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar Inscrição!</button>
+                    <button type="reset">Limpar Formulário!</button>
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 - Mundo da Natação. Todos os direitos reservados ao criador deste site, Victor Willy.</p> 
+    </footer>
+</body>
+</html>
