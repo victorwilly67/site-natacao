@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo da Natação - Contato</title>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <h1>Mundo da Natação</h1>
+    </header>
+
+    <nav aria-label="Navegação principal">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="dados.html">Dados</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Fale Conosco</h2>
+            <p>Se você tem dúvidas, sugestões ou precisar de mais informações, entre em contato conosco!</p>
+
+            <h3>Nossa sede</h3>
+            <adress>
+                Centro de Treinamento de Alto Rendimento - Mundo da Natação<br>
+                Rua Moisés, nº 97 - Bairro Glória<br>
+                Joinville - SC, CEP: 89217-265
+                Telefone: <a href="tel:+5547997823936">(47) 99782-3936</a><br>
+                E-mail: <a href="mailto:atendimento@mundodanatacao.com.br">atendimento@mundodanatacao.com.br</a>
+            </adress>
+
+            <p>
+                <a href="https://www.google.com/maps/" target="_blank" rel="noopener noreferrer">
+                    Para ver a localização de nosso CT, clique aqui.
+                </a>
+            </p>
+        </section>
+
+        <section>
+            <h3>Horários de Atendimento e Treinos</h3>
+            <table>
+                <caption>Horário semanal da academia e piscina<br><br></caption>
+                <thead>
+                    <th scope="col">Dia da Semana</th>
+                    <th scope="col">Horário de Atendimento</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Segunda a Sexta</th>
+                        <td>06:00 - 22:00</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Sábados</th>
+                        <td>08:00 - 15:00</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Domingos e Feriados</th>
+                        <td>Fechado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section> 
+            <h3>Envie uma mensagem, se tiver qualquer dúvida!</h3>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Mensagem rápida para nossos atendentes</legend>
+                    
+                    <p>
+                        <label for="nome-contato">Seu nome:</label><br>
+                        <input type="text" id="nome-contato" name="noma-contato">
+                    </p>
+
+                    <p>
+                        <label for="email-contato">Seu E-mail:</label>
+                        <input type="text" id="email-contato" name="email-contato">
+                    </p>
+                    
+                    <p>
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto">
+                    </p>
+
+                    <p>
+                        <label for="mensagem">Sua mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar Mensagem!</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 - Mundo da Natação. Todos os direitos reservados ao criador deste site, Victor Willy.</p>
+    </footer>
+</body>
+</html>
